@@ -16,13 +16,14 @@ return new class extends Migration
         Schema::create('measurements', function (Blueprint $table) {
             $table->id();
             $table->date('date');
-            $table->doule('weight');
+            $table->double('weight');
             $table->double('height');
             $table->double('chest');
             $table->double('left_arm');
             $table->double('right_arm');
             $table->double('abdomen');
-            $table->double('Hips');
+            $table->double('waist');
+            $table->double('hips');
             $table->double('left_thigh');
             $table->double('right_thigh');
             $table->double('left_calf');
